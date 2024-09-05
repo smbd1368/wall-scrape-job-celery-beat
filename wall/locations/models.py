@@ -1,0 +1,26 @@
+from django.db import models
+
+class PostRow(models.Model):
+    widget_type = models.CharField(max_length=100,blank = True)
+    image_url = models.JSONField(blank = True)
+    image_count = models.IntegerField(blank = True)
+    title = models.CharField(max_length=100,blank = True)
+    top_description_text = models.CharField(max_length=100,blank = True)
+    middle_description_text = models.CharField(max_length=100,blank = True)
+    bottom_description_text = models.CharField(max_length=100,blank = True)
+    red_text = models.CharField(max_length=100,blank = True)
+    action_type = models.CharField(max_length=100,blank = True)
+    action_payload = models.JSONField(blank = True)
+    checkable = models.BooleanField(blank = True)
+    label = models.CharField(max_length=100,blank = True)
+    label_color = models.CharField(max_length=100,blank = True)
+    note = models.CharField(max_length=100,blank = True)
+    tags = models.JSONField(blank = True)
+    standard_label_color = models.CharField(max_length=100,blank = True)
+    is_checked = models.BooleanField(blank = True)
+    has_divider = models.BooleanField(blank = True)
+    padded = models.BooleanField(blank = True)
+    has_chat = models.BooleanField(blank = True)
+    token = models.CharField(max_length=100,blank = True)
+    city = models.CharField(max_length=100,blank = True)
+

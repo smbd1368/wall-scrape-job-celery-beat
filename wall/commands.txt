@@ -1,0 +1,7 @@
+C:\Users\bagher\Documents\directins\env\Scripts\activate
+
+source C:/Users/bagher/Documents/directins/env/Scripts/activate
+
+
+# celery -A wall worker 
+# python -m celery -A wall worker -l info
